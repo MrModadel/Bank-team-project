@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Страница карты</title>
+   <link rel="stylesheet" href="./style.scss">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="../../../sass/style.scss">
+</head>
+
+<body>
+   <div class="wrapper">
+      <main class="main">
+         <div class="left">
+            <div id="container">
+               <div class="card" id="inner">
+                  <div class="card-inner">
+                     <div class="front">
+                        <img src="https://i.ibb.co/PYss3yv/map.png" class="map-img">
+                        <div class="row">
+                           <img src="https://i.ibb.co/G9pDnYJ/chip.png" width="60px">
+                           <p style="font-size: 32px;" id="name"></p>
+                        </div>
+                        <div class="row card-no" id="id-Index">
+                           <p></p>
+                           <p></p>
+                           <p></p>
+                           <p></p>
+                        </div>
+                        <div class="row card-holder">
+                           <p>CARD HEPLDER</p>
+                           <p class="currency"></p>
+                        </div>
+                        <div class="row name">
+                           <p id="user-name"> </p>
+                           <p>10 / 25</p>
+                        </div>
+                     </div>
+                     <div class="back">
+                        <img src="https://i.ibb.co/PYss3yv/map.png" class="map-img">
+                        <div class="bar"></div>
+                        <div class="row card-cvv">
+                           <div>
+                              <img src="https://i.ibb.co/S6JG8px/pattern.png">
+                           </div>
+                           <p>824</p>
+                        </div>
+                        <div class="row card-text">
+                           <p>this is a virtual card design using HTML and CSS. You can aslo design something like this.
+                           </p>
+                        </div>
+                        <div class="row signature">
+                           <p>CUSTOMER SIGNATURE</p>
+                           <img src="https://i.ibb.co/WHZ3nRJ/visa.png" width="80px">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="balance">
+               <div class="balance__container">
+                  <h2 class="balance__title">Баланс:</h2>
+                  <p class="balance__text">Ваш баланс: <span id="balance"></span></p>
+                  <p class="balance__text">Ваша валюта: <span class="currency"></span></p>
+                  <h2 class="balance__title">Обмен:</h2>
+                  <p class="balance__text"><span class="currency"></span> => <span id="to">UZS</span></p>
+                  <button id="btn__exchange" class="btn-balance btn__add" style="margin-top: 30px;">Провести
+                     обмен</button>
+               </div>
+            </div>
+         </div>
+         <div class="right">
+            <div class="box">
+               <div class="transaction container">
+                  <div class="transaction__container">
+                     <div class="transaction__title">
+                        Все транзакции c этой карты
+                     </div>
+                     <div class="transaction__content">
+                        <table class="table">
+                           <thead>
+                              <tr>
+                                 <th>ID</th>
+                                 <th>Отправлено с кошелька</th>
+                                 <th>Категория </th>
+                                 <th>Сумма транзации</th>
+                                 <th>Когда</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                           </tbody>
+                        </table>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </main>
+   </div>
+   <script type="module" src="./index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,421 @@
+{
+  "users": [
+    {
+      "firstname": "Shawkat",
+      "lastname": "Normurodov",
+      "email": "timanormu@gmail.com",
+      "password": "1234Shavkat",
+      "id": 1
+    },
+    {
+      "firstname": "Daler",
+      "lastname": "Sharifkulov",
+      "email": "dsarifkulo021@gmail.com",
+      "password": "1234Daler",
+      "id": 2
+    }
+  ],
+  "cards": [
+    {
+      "id": "736f5c24-74bf-4411-80ea-6c647ce17878",
+      "user_id": 1,
+      "name": "Ozodgdewifi",
+      "balance": 134000.000213,
+      "currency": "UZS"
+    },
+    {
+      "id": "559dfbb2-c44b-44e7-8368-873ed57501f2",
+      "user_id": 2,
+      "name": "Humo",
+      "balance": 9900,
+      "currency": "dirhum"
+    },
+    {
+      "id": "9634d6ff-0b4d-4e72-b5d7-790a13970304",
+      "user_id": 2,
+      "name": "Visa",
+      "balance": 20,
+      "currency": "USD"
+    },
+    {
+      "id": "6a88317c-6297-479f-855a-31c2059389d4",
+      "user_id": 1,
+      "name": "MasterCard",
+      "balance": 1000000.001176,
+      "currency": "USD"
+    }
+  ],
+  "transactions": [
+    {
+      "id": 213213123123,
+      "user_id": 2,
+      "card": {
+        "id": 2,
+        "name": "Visa"
+      },
+      "category": "food",
+      "amount": 10000,
+      "date": "2023-06-15 17:33"
+    },
+    {
+      "id": "a5d9226e-f078-4ca3-9729-76c3d2c508a1",
+      "user_id": 2,
+      "date": "2023-6-15 18:0",
+      "card": {
+        "id": "9634d6ff-0b4d-4e72-b5d7-790a13970304",
+        "name": "Visa",
+        "balance": "100"
+      },
+      "amount": "30",
+      "category": "food"
+    },
+    {
+      "id": "3d2905ef-5a3c-4770-9f9b-2cfe913a40d1",
+      "user_id": 2,
+      "date": "2023-6-15 18:0",
+      "card": {
+        "id": "9634d6ff-0b4d-4e72-b5d7-790a13970304",
+        "name": "Visa",
+        "balance": 70
+      },
+      "amount": "30",
+      "category": "food"
+    },
+    {
+      "id": "6d910aa0-3061-4a36-86b9-194587878b90",
+      "user_id": 2,
+      "date": "2023-6-15 18:10",
+      "card": {
+        "id": "9634d6ff-0b4d-4e72-b5d7-790a13970304",
+        "name": "Visa",
+        "balance": 40
+      },
+      "amount": "10",
+      "category": "car"
+    },
+    {
+      "id": "011ec597-18e9-4e0d-85f5-de1887e60e3e",
+      "user_id": 2,
+      "date": "2023-6-15 18:2",
+      "card": {
+        "id": "9634d6ff-0b4d-4e72-b5d7-790a13970304",
+        "name": "Visa",
+        "balance": 30
+      },
+      "amount": "10",
+      "category": "food"
+    },
+    {
+      "id": "eff4a80e-fef0-47e0-927c-97f84eecd124",
+      "user_id": 1,
+      "date": "2023-6-19 20:32",
+      "card": {
+        "id": "736f5c24-74bf-4411-80ea-6c647ce17878",
+        "name": "Ozodgdewifi",
+        "balance": "140000"
+      },
+      "amount": "1000",
+      "category": "food"
+    },
+    {
+      "id": "eff4a80e-fef0-47e0-927c-97f84eecd124",
+      "user_id": 1,
+      "date": "2023-6-19 20:32",
+      "card": {
+        "id": "736f5c24-74bf-4411-80ea-6c647ce17878",
+        "name": "Ozodgdewifi",
+        "balance": "140000"
+      },
+      "amount": "1000",
+      "category": "food"
+    },
+    {
+      "id": "eff4a80e-fef0-47e0-927c-97f84eecd124",
+      "user_id": 1,
+      "date": "2023-6-19 20:32",
+      "card": {
+        "id": "736f5c24-74bf-4411-80ea-6c647ce17878",
+        "name": "Ozodgdewifi",
+        "balance": "140000"
+      },
+      "amount": "1000",
+      "category": "food"
+    },
+    {
+      "id": "eff4a80e-fef0-47e0-927c-97f84eecd124",
+      "user_id": 1,
+      "date": "2023-6-19 20:32",
+      "card": {
+        "id": "736f5c24-74bf-4411-80ea-6c647ce17878",
+        "name": "Ozodgdewifi",
+        "balance": "140000"
+      },
+      "amount": "1000",
+      "category": "food"
+    },
+    {
+      "id": "eff4a80e-fef0-47e0-927c-97f84eecd124",
+      "user_id": 1,
+      "date": "2023-6-19 20:32",
+      "card": {
+        "id": "736f5c24-74bf-4411-80ea-6c647ce17878",
+        "name": "Ozodgdewifi",
+        "balance": "140000"
+      },
+      "amount": "1000",
+      "category": "food"
+    },
+    {
+      "id": "eff4a80e-fef0-47e0-927c-97f84eecd124",
+      "user_id": 1,
+      "date": "2023-6-19 20:32",
+      "card": {
+        "id": "736f5c24-74bf-4411-80ea-6c647ce17878",
+        "name": "Ozodgdewifi",
+        "balance": "140000"
+      },
+      "amount": "1000",
+      "category": "food"
+    },
+    {
+      "id": "eff4a80e-fef0-47e0-927c-97f84eecd124",
+      "user_id": 1,
+      "date": "2023-6-19 20:32",
+      "card": {
+        "id": "736f5c24-74bf-4411-80ea-6c647ce17878",
+        "name": "Ozodgdewifi",
+        "balance": "140000"
+      },
+      "amount": "1000",
+      "category": "food"
+    },
+    {
+      "id": "eff4a80e-fef0-47e0-927c-97f84eecd124",
+      "user_id": 1,
+      "date": "2023-6-19 20:32",
+      "card": {
+        "id": "736f5c24-74bf-4411-80ea-6c647ce17878",
+        "name": "Ozodgdewifi",
+        "balance": "140000"
+      },
+      "amount": "1000",
+      "category": "food"
+    },
+    {
+      "id": "eff4a80e-fef0-47e0-927c-97f84eecd124",
+      "user_id": 1,
+      "date": "2023-6-19 20:32",
+      "card": {
+        "id": "736f5c24-74bf-4411-80ea-6c647ce17878",
+        "name": "Ozodgdewifi",
+        "balance": "140000"
+      },
+      "amount": "1000",
+      "category": "food"
+    },
+    {
+      "id": "eff4a80e-fef0-47e0-927c-97f84eecd124",
+      "user_id": 1,
+      "date": "2023-6-19 20:32",
+      "card": {
+        "id": "736f5c24-74bf-4411-80ea-6c647ce17878",
+        "name": "Ozodgdewifi",
+        "balance": "140000"
+      },
+      "amount": "1000",
+      "category": "food"
+    },
+    {
+      "id": "eff4a80e-fef0-47e0-927c-97f84eecd124",
+      "user_id": 1,
+      "date": "2023-6-19 20:32",
+      "card": {
+        "id": "736f5c24-74bf-4411-80ea-6c647ce17878",
+        "name": "Ozodgdewifi",
+        "balance": "140000"
+      },
+      "amount": "1000",
+      "category": "food"
+    },
+    {
+      "id": "eff4a80e-fef0-47e0-927c-97f84eecd124",
+      "user_id": 1,
+      "date": "2023-6-19 20:32",
+      "card": {
+        "id": "736f5c24-74bf-4411-80ea-6c647ce17878",
+        "name": "Ozodgdewifi",
+        "balance": "140000"
+      },
+      "amount": "1000",
+      "category": "food"
+    },
+    {
+      "id": "eff4a80e-fef0-47e0-927c-97f84eecd124",
+      "user_id": 1,
+      "date": "2023-6-19 20:32",
+      "card": {
+        "id": "736f5c24-74bf-4411-80ea-6c647ce17878",
+        "name": "Ozodgdewifi",
+        "balance": "140000"
+      },
+      "amount": "1000",
+      "category": "food"
+    },
+    {
+      "id": "eff4a80e-fef0-47e0-927c-97f84eecd124",
+      "user_id": 1,
+      "date": "2023-6-19 20:32",
+      "card": {
+        "id": "736f5c24-74bf-4411-80ea-6c647ce17878",
+        "name": "Ozodgdewifi",
+        "balance": "140000"
+      },
+      "amount": "1000",
+      "category": "food"
+    },
+    {
+      "id": "eff4a80e-fef0-47e0-927c-97f84eecd124",
+      "user_id": 1,
+      "date": "2023-6-19 20:32",
+      "card": {
+        "id": "736f5c24-74bf-4411-80ea-6c647ce17878",
+        "name": "Ozodgdewifi",
+        "balance": "140000"
+      },
+      "amount": "1000",
+      "category": "food"
+    },
+    {
+      "id": "eff4a80e-fef0-47e0-927c-97f84eecd124",
+      "user_id": 1,
+      "date": "2023-6-19 20:32",
+      "card": {
+        "id": "736f5c24-74bf-4411-80ea-6c647ce17878",
+        "name": "Ozodgdewifi",
+        "balance": "140000"
+      },
+      "amount": "1000",
+      "category": "food"
+    },
+    {
+      "id": "eff4a80e-fef0-47e0-927c-97f84eecd124",
+      "user_id": 1,
+      "date": "2023-6-19 20:32",
+      "card": {
+        "id": "736f5c24-74bf-4411-80ea-6c647ce17878",
+        "name": "Ozodgdewifi",
+        "balance": "140000"
+      },
+      "amount": "1000",
+      "category": "food"
+    },
+    {
+      "id": "eff4a80e-fef0-47e0-927c-97f84eecd124",
+      "user_id": 1,
+      "date": "2023-6-19 20:32",
+      "card": {
+        "id": "736f5c24-74bf-4411-80ea-6c647ce17878",
+        "name": "Ozodgdewifi",
+        "balance": "140000"
+      },
+      "amount": "1000",
+      "category": "food"
+    },
+    {
+      "id": "eff4a80e-fef0-47e0-927c-97f84eecd124",
+      "user_id": 1,
+      "date": "2023-6-19 20:32",
+      "card": {
+        "id": "736f5c24-74bf-4411-80ea-6c647ce17878",
+        "name": "Ozodgdewifi",
+        "balance": "140000"
+      },
+      "amount": "1000",
+      "category": "food"
+    },
+    {
+      "id": "b7ff7468-e859-4b4a-a6ef-7492b951676f",
+      "user_id": 1,
+      "date": "2023-6-19 23:14",
+      "card": {
+        "id": "736f5c24-74bf-4411-80ea-6c647ce17878",
+        "name": "Ozodgdewifi",
+        "balance": 139000
+      },
+      "amount": "2000",
+      "category": "food"
+    },
+    {
+      "id": "b468c5f7-0fec-41ba-bcdc-bb23c995dde5",
+      "user_id": 1,
+      "date": "2023-6-19 23:22",
+      "card": {
+        "id": "736f5c24-74bf-4411-80ea-6c647ce17878",
+        "name": "Ozodgdewifi",
+        "balance": 137000
+      },
+      "amount": "2000",
+      "category": "food"
+    },
+    {
+      "id": "ba980c28-55ef-4452-88d7-a9abd44f3483",
+      "user_id": 1,
+      "date": "2023-6-19 23:23",
+      "card": {
+        "id": "6a88317c-6297-479f-855a-31c2059389d4",
+        "name": "MasterCard",
+        "balance": "1000"
+      },
+      "amount": "1000",
+      "category": "food"
+    },
+    {
+      "id": "883bd96a-0a8d-4550-b7b7-5f0e294d1218",
+      "user_id": 1,
+      "date": "2023-6-19 23:24",
+      "card": {
+        "id": "6a88317c-6297-479f-855a-31c2059389d4",
+        "name": "MasterCard",
+        "balance": 1000
+      },
+      "amount": "1000",
+      "category": "food"
+    },
+    {
+      "id": "2cc7daf1-8e28-4d2b-a697-3cd09c3ec505",
+      "user_id": 1,
+      "date": "2023-6-19 23:25",
+      "card": {
+        "id": "736f5c24-74bf-4411-80ea-6c647ce17878",
+        "name": "Ozodgdewifi",
+        "balance": 134000
+      },
+      "amount": "1000",
+      "category": "food"
+    },
+    {
+      "id": "b98747f8-bfcf-44ea-87fa-ebcd936b7305",
+      "user_id": 1,
+      "date": "2023-6-19 23:26",
+      "card": {
+        "id": "6a88317c-6297-479f-855a-31c2059389d4",
+        "name": "MasterCard",
+        "balance": 0
+      },
+      "amount": "1000",
+      "category": "food"
+    },
+    {
+      "id": "acf3a602-2f54-4d98-9a43-0157311f3250",
+      "user_id": 2,
+      "date": "2023-6-19 23:31",
+      "card": {
+        "id": "559dfbb2-c44b-44e7-8368-873ed57501f2",
+        "name": "Humo",
+        "balance": 9900
+      },
+      "amount": "100",
+      "category": "food"
+    }
+  ]
+}

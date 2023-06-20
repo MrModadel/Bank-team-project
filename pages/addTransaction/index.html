@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <link rel="icon" type="image/svg+xml" href="../assets/icons/xhml.svg">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+   <script src="/modules/guard.js"></script>
+   <title>Вход в аккаунт</title>
+   <style>
+      * {
+         padding: 0;
+         margin: 0;
+         box-sizing: border-box;
+         font-family: Roboto;
+      }
+
+      ul,
+      ol {
+         list-style: none;
+      }
+
+      .wrapper {
+         margin-top: 150px;
+      }
+
+      .loginForm {
+         width: 400px;
+         margin: 0 auto;
+         display: flex;
+         flex-direction: column;
+         gap: 10px;
+         margin-top: 40px;
+      }
+
+      .wrapper h3 {
+         font-style: normal;
+         font-weight: 700;
+         font-size: 48px;
+         line-height: 59px;
+         text-align: center;
+      }
+
+      input {
+         background: #FFFFFF;
+         border: 1px solid #000000;
+         border-radius: 10px;
+         padding: 20px 25px;
+      }
+
+      a {
+         text-decoration: none;
+         font-style: normal;
+         font-weight: 700;
+         font-size: 18px;
+         line-height: 22px;
+         text-align: center;
+         color: #0047FF;
+         margin-top: 30px;
+      }
+
+      @media(max-width: 320px) {
+
+         .loginForm,
+         input {
+            width: 320px;
+         }
+      }
+
+      @media (max-width: 340px) {
+
+         .loginForm,
+         input {
+            width: 340px;
+         }
+      }
+
+      @media(max-width: 360px) {
+
+         .loginForm,
+         input {
+            width: 360px;
+         }
+
+      }
+
+      .info {
+         display: none;
+         justify-content: center;
+         align-items: center;
+         color: red;
+         background-color: #c4c4c4;
+         width: 50%;
+         height: 80px;
+         border-radius: 10px;
+         font-weight: 700;
+         font-size: 28px;
+         line-height: 28px;
+         position: absolute;
+         bottom: 0;
+         left: 50%;
+         transform: translateX(-50%);
+         margin: 0 auto;
+         transition: all .3s ease;
+         text-align: center;
+         opacity: 0;
+      }
+
+      .error {
+         border: 2px solid red;
+      }
+
+      .dropdown {
+         position: relative;
+      }
+
+      .dropdown__button {
+         position: relative;
+         display: block;
+         width: 100%;
+         text-align: left;
+
+         background: #ffffff;
+         border-radius: 10px;
+         height: 60px;
+
+         padding: 20px 25px;
+
+         font-weight: 500;
+         font-size: 16px;
+         line-height: 20px;
+
+         cursor: pointer;
+      }
+
+      .dropdown__button:focus,
+      .dropdown__button--active {
+         outline: none;
+      }
+
+      .dropdown__button::after {
+         content: "";
+         position: absolute;
+         top: 50%;
+         right: 15px;
+         transform: translateY(-50%);
+
+         /* Рисуем треугольник */
+         width: 0;
+         height: 0;
+         border-width: 10.4px 6px 0 6px;
+         border-color: #79849b transparent transparent transparent;
+         border-style: solid;
+
+         /* Снимаем клик с треугольника */
+         pointer-events: none;
+      }
+
+      .dropdown__list {
+         display: none;
+
+         position: absolute;
+         left: 0;
+         top: 64px;
+
+         margin: 0;
+         padding: 0;
+         list-style-type: none;
+
+         background: #ffffff;
+         box-shadow: 0px 4px 8px rgba(176, 198, 225, 0.6);
+         overflow: hidden;
+
+         border-radius: 6px;
+         width: 100%;
+
+         z-index: 1;
+      }
+
+      .dropdown__list--visible {
+         display: block;
+      }
+
+      .dropdown__list-item {
+         margin: 0;
+         padding: 0;
+         border: 1px solid #0000;
+         border-bottom: 0px;
+         padding: 20px 25px;
+         cursor: pointer;
+      }
+
+      .dropdown__list-item:first-child {
+         border-radius: 6px 6px 0 0;
+      }
+
+      .dropdown__list-item:last-child {
+         border-radius: 0 0 6px 6px;
+         border-bottom: 1px solid #0000;
+      }
+
+      .dropdown__list-item:hover {
+         background: rgba(176, 198, 225, 0.26);
+      }
+
+      .dropdown__input-hidden {
+         display: none;
+      }
+   </style>
+</head>
+
+<body>
+   <div class="wrapper">
+      <h3>Добавить транзакцию</h3>
+      <form name="add" class="loginForm">
+         <div class="form-group">
+            <div class="dropdown">
+               <button class="dropdown__button"></button>
+               <ul class="dropdown__list">
+               </ul>
+               <input type="text" id="card" name="card" value="" class="dropdown__input-hidden">
+            </div>
+         </div>
+         <input type="text" placeholder="Сумма" id="sum" name="amount">
+         <input type="text" placeholder="Категория" id="categories" name="category">
+         <button style="         all: unset;
+         text-align: center;
+         cursor: pointer;
+         font-style: normal;
+         font-weight: 600;
+         font-size: 18px;
+         line-height: 22px;
+         color: white;
+         background: #0047FF;
+         border-radius: 10px;
+         padding: 15px 0;">Добавить</button>
+      </form>
+      <div class="info">
+         <p>Все поля обязательны для правельного заполнения</p>
+      </div>
+   </div>
+   <script src="index.js" type="module"></script>
+</body>
+
+</html>
